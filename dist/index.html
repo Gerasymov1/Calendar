@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
+    <title>Calendar</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-title">
+        <h1>Calendar</h1>
+      </div>
+      <div class="header-actions">
+        <form action="" class="header-form">
+          <label for="names"></label>
+          <select class="select" id="names" name="names">
+            <option value="all-members" selected>All members</option>
+            <option value="Maria">Maria</option>
+            <option value="Bob">Bob</option>
+            <option value="Alex">Alex</option>
+          </select>
+        </form>
+        <a href="../src/add.html"
+          ><button class="header-button" type="button">New Event+</button></a
+        >
+      </div>
+    </header>
+    <section class="section-calendar">
+      <table>
+        <tr id="main-tr">
+          <th>Name</th>
+          <th class="main-day"></th>
+          <th class="main-day"></th>
+          <th class="main-day"></th>
+          <th class="main-day"></th>
+          <th class="main-day"></th>
+        </tr>
+        <tr class="time" id="tr-10">
+          <td></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+        </tr>
+        <tr class="time" id="tr-11">
+          <td></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+        </tr>
+
+        <tr class="time" id="tr-12">
+          <td></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+        </tr>
+        <tr class="time" id="tr-13">
+          <td></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+        </tr>
+        <tr class="time" id="tr-14">
+          <td></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+        </tr>
+        <tr class="time" id="tr-15">
+          <td></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+        </tr>
+        <tr class="time" id="tr-16">
+          <td></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+        </tr>
+        <tr class="time" id="tr-17">
+          <td></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+        </tr>
+
+        <tr class="time" id="tr-18">
+          <td></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+          <td class="clear"></td>
+        </tr>
+      </table>
+      <div class="modal">
+        <div class="modal-content">
+          <p>Are you shure you want to delete the event?</p>
+          <div class="button-container">
+            <button class="delete">Yes</button>
+            <button class="close">No</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>

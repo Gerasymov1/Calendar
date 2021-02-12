@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet/less" type="text/css" href="styles-add.less" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
+    <title>Create card</title>
+  </head>
+  <body>
+    <div class="error-container"></div>
+    <form action="../dist/index.html" method="GET" id="addform">
+      <div class="input-container df">
+        <h3>Name of event</h3>
+        <input type="text" placeholder="Create an event..." />
+      </div>
+      <div class="participant-container df">
+        <h3>Participants</h3>
+        <select name="participant" id="participant" multiple>
+          <option value="add-maria">Maria</option>
+          <option value="add-bob">Bob</option>
+          <option value="add-alex">Alex</option>
+        </select>
+      </div>
+      <div class="day-container df">
+        <h3>Day</h3>
+        <select name="day" id="day">
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+        </select>
+      </div>
+      <div class="time-container df">
+        <h3>Time</h3>
+        <select name="time" id="time">
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+          <option value="12:00">12:00</option>
+          <option value="13:00">13:00</option>
+          <option value="14:00">14:00</option>
+          <option value="15:00">15:00</option>
+          <option value="16:00">16:00</option>
+          <option value="17:00">17:00</option>
+          <option value="18:00">18:00</option>
+        </select>
+      </div>
+      <div class="buttons-container">
+        <button type="reset" id="reset">Cancel</button>
+        <button type="submit" id="submit">Create</button>
+      </div>
+    </form>
+
+    <script src="add.js"></script>
+  </body>
+</html>
